@@ -17,7 +17,7 @@
 4. User/manager will be redirected to http://localhost:3000/user upon successful login.
 5. Manager can logout or access manager-only content via navigation bar. User can logout via navigation bar.
 
-Note: Backend can be found [here](https://github.com/Ustiel/login-app-backend/). 
+Note: Backend repo can be found [here](https://github.com/Ustiel/login-app-backend/). 
 
 
 
