@@ -22,7 +22,7 @@ export default function Login(){
     
       const handleSubmit = (event) => {
         event.preventDefault();
-        console.log("in handleSubmit")
+        // console.log("in handleSubmit")
         setMessage("");
       
         AuthService.login(username, password).then(

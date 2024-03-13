@@ -6,7 +6,7 @@ const API_URL = "http://localhost:8080/api/app/";
 //post username and pw, add user info to local storage
 const login = (username, password) => {
 
-  console.log("login verification")
+  // console.log("login verification")
 
   return axios
     .post(API_URL + "login", {
