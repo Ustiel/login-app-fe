@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import './App.css'
-import { BrowserRouter as Router, Routes, Route,Link } from "react-router-dom";
+import {Routes, Route,Link } from "react-router-dom";
 import Login from "./pages/Login";
 import Home from "./pages/Home";
 import Restricted from "./pages/Restricted";
@@ -38,7 +38,6 @@ export default function App() {
 
 
   return (
-    // <Router>
       <div>
         <nav>
             <div className="nav-container">
@@ -68,7 +67,6 @@ export default function App() {
           <Route path="/logout" element={<Login />} />
         </Routes>
       </div>
-    // </Router>
   );
 }
 

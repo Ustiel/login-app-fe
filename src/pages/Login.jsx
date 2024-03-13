@@ -1,10 +1,9 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import AuthService from "../services/authentication.js"
+import AuthService from "../services/authentication";
 
 export default function Login(){
 
-    // const [loading, setLoading] = useState(false);
     const [message, setMessage] = useState("");
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
@@ -20,22 +19,11 @@ export default function Login(){
         const password = e.target.value;
         setPassword(password);
       };
-
-    const required = (value) => {
-        if (!value) {
-          return (
-            <p>
-              This field is required!
-            </p>
-          );
-        }
-      };
     
       const handleSubmit = (event) => {
         event.preventDefault();
         console.log("in handleSubmit")
         setMessage("");
-        // setLoading(true);
       
         AuthService.login(username, password).then(
             () => {
@@ -43,21 +31,9 @@ export default function Login(){
                 window.location.reload();
             },
             (error) => {
-            // const responseMessage =
-            //     (error.response &&
-            //     error.response.data &&
-            //     error.response.data.message) ||
-            //     error.message ||
-            //     error.toString();
-    
-                // setLoading(false);
                 setMessage("Login failed. Invalid userid or password. ");
             }
         );
-         
-        // else {
-        //   setLoading(false);
-        // }
       };
 
 

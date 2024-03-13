@@ -1,5 +1,6 @@
 import axios from "axios";
 
+
 const API_URL = "http://localhost:8080/api/app/";
 
 //post username and pw, add user info to local storage
@@ -21,7 +22,6 @@ const login = (username, password) => {
     });
 };
 
-
 //post logout request,remove user info from local storage
 const logout = () => {
   localStorage.removeItem("user");
@@ -30,11 +30,9 @@ const logout = () => {
   });
 };
 
-
 const getCurrentUser = () => {
   return JSON.parse(localStorage.getItem("user"));
 };
-
 
 const AuthService = {
   login,
