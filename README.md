@@ -18,7 +18,7 @@
 5. Manager can logout or access manager-only content via navigation bar. User can logout via navigation bar.
 
 Note: Backend repo can be found [here](https://github.com/Ustiel/login-app-backend/). 
-
+Sample screenshots of frontend can be found [here](https://docs.google.com/document/d/1z1qUAIdx-K-hF_ca46RvLPR6EABOWHxqwiirBmsE6RQ/edit?usp=sharing)
 
 
 
