@@ -1,10 +1,10 @@
-# Language
+## Language
 - React JS
 
-# Local development server
+## Local development server
 - Vite
   
-$ Instructions
+## Instructions
 1. run "npm run dev" in terminal.
 2. Go to http://localhost:3000/login
 3. Enter login details in UI.
